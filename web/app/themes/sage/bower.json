@@ -1,8 +1,8 @@
 {
-  "name": "asfb theme",
-  "homepage": "https://asfb.se/",
+  "name": "Octopus theme",
+  "homepage": "https://example.com/",
   "authors": [
-    "Ben Word <a@afn.so>"
+    "Afonso <a@afn.so>"
   ],
   "license": "MIT",
   "private": true,
