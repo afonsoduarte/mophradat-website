@@ -29,14 +29,14 @@
 
 // Captions
 .wp-caption {
-  @extend .thumbnail;
+  &:extend(.thumbnail all);
 }
 .wp-caption-text {
-  padding: $thumbnail-caption-padding;
+  &:extend(.thumbnail .caption all);
 }
 
 // Text meant only for screen readers
 .screen-reader-text {
-  @extend .sr-only;
-  @extend .sr-only-focusable;
+  &:extend(.sr-only all);
+  &:extend(.sr-only-focusable all);
 }
