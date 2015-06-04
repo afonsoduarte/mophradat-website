@@ -1,3 +1,5 @@
+Website for Octopus. Based on:
+
 # [Bedrock](https://roots.io/bedrock/)
 [![Build Status](https://travis-ci.org/roots/bedrock.svg)](https://travis-ci.org/roots/bedrock)
 
