@@ -25,6 +25,6 @@
     }
   },
   "config": {
-    "devUrl": "http://asfb.dev"
+    "devUrl": "http://octopus.dev"
   }
 }
