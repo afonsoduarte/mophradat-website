@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  text-indent: $indent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li li {
+  &:before {
+    content: "– ";
+  }
+}
+
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}

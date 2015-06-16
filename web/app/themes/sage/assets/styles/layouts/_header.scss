@@ -1,0 +1,27 @@
+.navbar {
+  height: $baseline*6;
+  font-family: $font-family-sans-serif;
+  a {
+    color: $black;
+  }
+}
+
+.navbar .container {
+  position: fixed;
+  width: 100%;
+  padding-top: $baseline;
+}
+
+.navbar-toggle {
+  border: none;
+  background: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.navbar-nav {
+  background: white;
+  .collapse & {
+    display: none;
+  }
+}

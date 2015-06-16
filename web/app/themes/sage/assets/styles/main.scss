@@ -4,4 +4,11 @@
 @import "../../bower_components/foundation/scss/foundation.scss";
 // endbower
 
-@import "components/posts";
+@import 
+  "common/global";
+
+@import 
+  "components/posts";
+
+@import 
+  "layouts/header";

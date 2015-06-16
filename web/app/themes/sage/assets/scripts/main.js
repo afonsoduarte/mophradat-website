@@ -23,6 +23,13 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $('.navbar-toggle').click(function(){
+          var $this = $(this),
+              elData = $this.data(),
+              toggle = elData.toggle,
+              target = elData.target;
+          $(target).toggleClass(toggle);
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
