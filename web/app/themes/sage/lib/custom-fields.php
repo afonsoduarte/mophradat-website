@@ -1,16 +1,20 @@
 <?php 
 
-if(function_exists("register_field_group"))
-{
+define( 'ACF_LITE', true );
+
+if(function_exists("register_field_group")) {
+  
+  // Publication Author
   register_field_group(array (
     'id' => 'acf_publications',
     'title' => 'Publications',
     'fields' => array (
       array (
-        'key' => 'field_5581bb77368d5',
-        'label' => 'author name',
+        'key' => 'field_5582fba84c99d',
+        'label' => 'Author',
         'name' => 'author_name',
         'type' => 'text',
+        'instructions' => 'Publication author(s)',
         'default_value' => '',
         'placeholder' => '',
         'prepend' => '',
@@ -31,7 +35,7 @@ if(function_exists("register_field_group"))
       ),
     ),
     'options' => array (
-      'position' => 'high',
+      'position' => 'acf_after_title',
       'layout' => 'no_box',
       'hide_on_screen' => array (
       ),
