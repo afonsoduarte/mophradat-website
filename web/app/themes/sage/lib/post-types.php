@@ -1,5 +1,8 @@
 <?php 
 
+namespace Roots\Sage\PostTypes;
+
+
 // Change Posts to Glossary
 function change_post_menu_label() {
   global $menu;
@@ -11,7 +14,7 @@ function change_post_menu_label() {
   //$submenu['edit.php'][16][0] = 'Labels'; // Change name for tags
   echo '';
 }
-add_action( 'admin_menu', 'change_post_menu_label' );
+add_action( 'admin_menu', __NAMESPACE__.'\\change_post_menu_label' );
 
 
 function change_post_object_label() {
@@ -28,4 +31,22 @@ function change_post_object_label() {
   $labels->not_found = 'No Glossary Terms found';
   $labels->not_found_in_trash = 'No Glossary Terms found in Trash';
 }
-add_action( 'init', 'change_post_object_label' );
+// add_action( 'init', __NAMESPACE__.'\\change_post_object_label' );
+
+
+// Custom Post Types
+
+function register_post_types() {
+
+  /* Publications */
+  $publications = array(
+    'public' => true,
+    'label'  => 'Publications',
+    'supports' => array( 'thumbnail', 'title', 'editor' ),
+    'taxonomies' => array( 'publication_type' ),
+    'has_archive' => true
+  );
+  register_post_type( 'publications', $publications );
+
+}
+add_action( 'init', __NAMESPACE__.'\\register_post_types' );

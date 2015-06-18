@@ -21,6 +21,7 @@ $sage_includes = [
   'lib/gallery.php',               // Custom [gallery] modifications
   'lib/extras.php',                // Custom functions
   'lib/post-types.php',            // Custom post types
+  'lib/custom-fields.php',
   'lib/hooks.php'
 ];
 
