@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1982fd002a8ecf080affc68b22406d08",
+    "hash": "bb757fac3a21cd75741c37d1d06b8f66",
     "packages": [
         {
             "name": "composer/installers",
@@ -300,26 +300,6 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist-plugin/foundationpress",
-            "version": "0.0.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/foundationpress/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/foundationpress.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/foundationpress/"
-        },
-        {
             "name": "wpackagist-plugin/jetpack",
             "version": "3.5.3",
             "source": {
@@ -358,26 +338,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/sir-trevor-wp/"
-        },
-        {
-            "name": "wpackagist-theme/white",
-            "version": "1.0.1.3",
-            "source": {
-                "type": "svn",
-                "url": "http://themes.svn.wordpress.org/white/",
-                "reference": "1.0.1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/white.1.0.1.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/white/"
         }
     ],
     "packages-dev": [],
