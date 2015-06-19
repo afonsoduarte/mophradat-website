@@ -14,7 +14,7 @@
 
 .navbar-toggle {
   border: none;
-  background: blue;
+  background: url('../images/octo-web.png') no-repeat;
   width: 100px;
   height: 100px;
 }
@@ -23,5 +23,13 @@
   background: white;
   .collapse & {
     display: none;
+  }
+}
+
+.dropdown-menu {
+  display: none;
+
+  .active & {
+    display: block;
   }
 }

@@ -16,6 +16,8 @@ ul {
 }
 
 li li {
+  list-style: none;
+  padding: 0;
   &:before {
     content: "– ";
   }
