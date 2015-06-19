@@ -120,3 +120,50 @@ function nav_menu_args($args = '') {
 }
 add_filter('wp_nav_menu_args', __NAMESPACE__ . '\\nav_menu_args');
 add_filter('nav_menu_item_id', '__return_null');
+
+
+/**
+ * Create default menu
+ */
+function create_menu() {
+  $menu_name = "Main menu";
+
+  // Check if the menu exists
+  $menu_exists = wp_get_nav_menu_object( $menu_name );
+
+  // If it doesn't exist, let's create it.
+  if( !$menu_exists){
+    $menu_id = wp_create_nav_menu($menu_name);
+
+    // Publishing 
+    $publishing_item_id = wp_update_nav_menu_item($menu_id, 0, array(
+      'menu-item-title' => 'Publishing',
+      'menu-item-classes' => 'publishing',
+      'menu-item-url' => '/publishing', 
+      'menu-item-status' => 'publish'));
+
+    wp_update_nav_menu_item($menu_id, 0, array(
+          'menu-item-title' => 'One-offs',
+          'menu-item-classes' => 'one-offs',
+          'menu-item-url' => '/publication-type/one-offs', 
+          'menu-item-parent-id' => $publishing_item_id,
+          'menu-item-status' => 'publish'));
+
+    wp_update_nav_menu_item($menu_id, 0, array(
+          'menu-item-title' => 'Series',
+          'menu-item-classes' => 'series',
+          'menu-item-url' => '/publication-type/series', 
+          'menu-item-parent-id' => $publishing_item_id,
+          'menu-item-status' => 'publish'));
+
+    $pages = get_pages();
+    foreach ($pages as $page) {
+      wp_update_nav_menu_item($menu_id, 0, array(
+        'menu-item-title' => apply_filters( 'the_title', $page->post_title ),
+        'menu-item-classes' => sanitize_title_with_dashes($page->post_title),
+        'menu-item-url' => get_permalink( $page->ID ), 
+        'menu-item-status' => 'publish'));
+    }
+  }
+}
+add_action('after_switch_theme', __NAMESPACE__ . '\\create_menu');

@@ -1,6 +1,6 @@
 <?php 
 
-define( 'ACF_LITE', true );
+// define( 'ACF_LITE', true );
 
 if(function_exists("register_field_group")) {
   

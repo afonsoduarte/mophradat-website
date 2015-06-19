@@ -17,4 +17,6 @@
   <?php get_template_part('templates/content'); ?>
 <?php endwhile; ?>
 
+<p class="see-glossary">[see <a href="">Glossary</a>]</p>
+
 <?php //the_posts_navigation(); ?>

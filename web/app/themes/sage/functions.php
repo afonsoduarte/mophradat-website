@@ -22,6 +22,7 @@ $sage_includes = [
   'lib/extras.php',                // Custom functions
   'lib/post-types.php',            // Custom post types
   'lib/custom-fields.php',
+  'lib/taxonomies.php',
   'lib/hooks.php'
 ];
 
