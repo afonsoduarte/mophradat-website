@@ -1,0 +1,109 @@
+# LANGUAGE (LOCALE) translation for Theme Letterhead.
+# Copyright (C) 2014 Tradesouthwest.
+# This file is distributed under the same license as the WordPress package.
+# FIRST AUTHOR <larry@tradesouthwest.com>, 2014.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-17 17:11-0700\n"
+"PO-Revision-Date: 2014-04-17 18:11-0700\n"
+"Last-Translator: none <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#404.php:13
+msgid "Oops! That page can not be found."
+msgstr ""
+
+#404.php:17
+msgid "Oh My! - nothing found."
+msgstr ""
+
+#404.php:24
+msgid "Most Used Categories"
+msgstr ""
+
+#404.php:32
+msgid "Try looking in the monthly archives."
+msgstr ""
+
+#comments.php:21
+msgid "No Comments yet, be the first to reply"
+msgstr ""
+
+#comments.php:23
+msgid "Comments are Closed on this Post"
+msgstr ""
+
+#footer.php:6
+msgid "Powered by:"
+msgstr ""
+
+#footer.php:8
+msgid "Top &uarr;"
+msgstr ""
+
+#functions.php:44
+msgid "Primary Menu"
+msgstr ""
+
+#functions.php:86
+msgid "Single Left-Side Widget Area"
+msgstr ""
+
+#page.php:21
+msgid "Edit"
+msgstr ""
+
+#page.php:29
+msgid "Nothing matched your criteria."
+msgstr ""
+
+#searchform.php:11
+msgid "Keyword(s)"
+msgstr ""
+
+#searchform.php:13
+msgid "Search Site"
+msgstr ""
+
+#sidebar.php:11
+msgid "Menu"
+msgstr ""
+
+#sidebar.php:13
+msgid "Skip to Content"
+msgstr ""
+
+#sidebar.php:14
+msgid "Skip to Content"
+msgstr ""
+
+#sidebar.php:25
+msgid "Your-Information"
+msgstr ""
+
+#single.php:16
+msgid "Posted by"
+msgstr ""
+
+#single.php:16
+msgid "M-d-Y"
+msgstr ""
+
+#single.php:23
+msgid "Edit"
+msgstr ""
+
+#single.php:24
+msgid "Tags:"
+msgstr ""
+
+#single.php:25
+msgid "In:"
+msgstr ""

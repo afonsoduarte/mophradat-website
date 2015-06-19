@@ -69,6 +69,26 @@ function create_page($page) {
   } 
   // Create page
   else {
+    // Convert to json for Sir Trevor
+    /*$content = '{
+      "data": [{
+        "type": "text",
+        "data": {
+          "text": "'.$page['post_content'].'"
+        }
+      }]
+    }';*/
+
+    $content = array(
+      'data' => array( 
+        array(
+          'type' => 'text', 
+          'data' => array( 
+            'text' => $page['post_content'] 
+          ))));
+
+    $page['post_content'] = json_encode($content);
+
     $page['post_author'] = $user_ID;
     $page['post_type'] = 'page';
     $page['post_status'] = 'publish';

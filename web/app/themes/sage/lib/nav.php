@@ -156,14 +156,14 @@ function create_menu() {
           'menu-item-parent-id' => $publishing_item_id,
           'menu-item-status' => 'publish'));
 
-    $pages = get_pages();
-    foreach ($pages as $page) {
-      wp_update_nav_menu_item($menu_id, 0, array(
-        'menu-item-title' => apply_filters( 'the_title', $page->post_title ),
-        'menu-item-classes' => sanitize_title_with_dashes($page->post_title),
-        'menu-item-url' => get_permalink( $page->ID ), 
-        'menu-item-status' => 'publish'));
-    }
+    // $pages = get_pages();
+    // foreach ($pages as $page) {
+    //   wp_update_nav_menu_item($menu_id, 0, array(
+    //     'menu-item-title' => apply_filters( 'the_title', $page->post_title ),
+    //     'menu-item-classes' => sanitize_title_with_dashes($page->post_title),
+    //     'menu-item-url' => get_permalink( $page->ID ), 
+    //     'menu-item-status' => 'publish'));
+    // }
   }
 }
 add_action('after_switch_theme', __NAMESPACE__ . '\\create_menu');
