@@ -10,6 +10,10 @@ web/app/uploads/*
 !web/app/mu-plugins/register-theme-directory.php
 !web/app/mu-plugins/bedrock-autoloader.php
 
+# Sir trevor in git until fix rolls down
+!web/app/plugins/sir-trevor-wp
+
+
 # WordPress
 web/wp
 web/.htaccess

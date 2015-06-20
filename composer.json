@@ -46,8 +46,7 @@
     "johnpbloch/wordpress": "*",
     "roots/soil": "^3.4",
     "wpackagist-plugin/advanced-custom-fields": "^4.4",
-    "wpackagist-plugin/jetpack": "^3.5",
-    "wpackagist-plugin/sir-trevor-wp": "^1.1"
+    "wpackagist-plugin/jetpack": "^3.5"
   },
   "extra": {
     "installer-paths": {
