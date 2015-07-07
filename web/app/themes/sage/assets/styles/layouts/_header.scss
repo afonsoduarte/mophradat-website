@@ -1,26 +1,61 @@
 .navbar {
-  height: $baseline*6;
+  @include grid-column(12);
+  @media #{$medium-up} {
+    @include grid-column(4);
+    height: $baseline*6;
+  }
+  @media #{$large-up} {
+    @include grid-column(3);
+    height: $baseline*6;
+  }
+
   font-family: $font-family-sans-serif;
+  color: blue;
   a {
-    color: $black;
+    color: inherit;
   }
 }
 
-.navbar .container {
+.navbar__container {
   position: fixed;
   width: 100%;
   padding-top: $baseline;
+  @media #{$medium-up} {
+    width: auto;
+  }
 }
 
-.navbar-toggle {
+.navbar__toggle {
   border: none;
-  background: url('../images/octo-web.png') no-repeat;
-  width: 100px;
+  float: left;
+  background-color: transparent;
+  background-image: url('../images/octo-web.png');
+  background-repeat: no-repeat;
+
+  width: 120px;
   height: 100px;
+  padding: 0;
 }
 
-.navbar-nav {
+.navbar__name {
+}
+
+.navbar__lang-menu {
+  margin-top: $baseline*2;
+  
+  .collapse & {
+    display: none;
+  }
+
+  .active {
+    display: none;
+  }
+}
+
+.navbar__menu {
   background: white;
+  clear: left;
+  list-style: none;
   .collapse & {
     display: none;
   }

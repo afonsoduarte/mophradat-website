@@ -69,25 +69,21 @@ function create_page($page) {
   } 
   // Create page
   else {
+    $content = $page['post_content'];
+
     // Convert to json for Sir Trevor
-    /*$content = '{
-      "data": [{
-        "type": "text",
-        "data": {
-          "text": "'.$page['post_content'].'"
-        }
-      }]
-    }';*/
+    if ( is_plugin_active( 'sir-trevor-wp/sir-trevor-wp.php' ) ) {
+      $content_array = array(
+        'data' => array( 
+          array(
+            'type' => 'text', 
+            'data' => array( 
+              'text' => $page['post_content'] 
+            ))));
+      $content = json_encode($content_array);
+    }
 
-    $content = array(
-      'data' => array( 
-        array(
-          'type' => 'text', 
-          'data' => array( 
-            'text' => $page['post_content'] 
-          ))));
-
-    $page['post_content'] = json_encode($content);
+    $page['post_content'] = $content;
 
     $page['post_author'] = $user_ID;
     $page['post_type'] = 'page';
