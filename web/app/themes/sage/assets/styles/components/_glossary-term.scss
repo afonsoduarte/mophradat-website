@@ -1,0 +1,21 @@
+.glossary-term {
+
+
+}
+
+.glossary-term__title {
+  display: inline;
+  font-size: 1rem; // $body-font-size;
+  font-weight: normal;
+}
+
+.glossary-term__content,
+.glossary-term__content p {
+  display: inline;
+}
+
+
+.see-glossary {
+  margin: 0;
+  text-indent: $indent;
+}

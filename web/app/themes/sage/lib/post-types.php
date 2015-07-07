@@ -2,41 +2,24 @@
 
 namespace Roots\Sage\PostTypes;
 
-
-// Change Posts to Glossary
-function change_post_menu_label() {
-  global $menu;
-  global $submenu;
-  $menu[5][0] = 'Glossary';
-  $submenu['edit.php'][5][0] = 'Glossary';
-  $submenu['edit.php'][10][0] = 'Add Glossary Term';
-  //$submenu['edit.php'][15][0] = 'Status'; // Change name for categories
-  //$submenu['edit.php'][16][0] = 'Labels'; // Change name for tags
-  echo '';
+// Remove post menu since we won't use it
+function hide_post_menu() {
+  remove_menu_page('edit.php');
 }
-add_action( 'admin_menu', __NAMESPACE__.'\\change_post_menu_label' );
-
-
-function change_post_object_label() {
-  global $wp_post_types;
-  $labels = &$wp_post_types['post']->labels;
-  $labels->name = 'Glossary Terms';
-  $labels->singular_name = 'Glossary Term';
-  $labels->add_new = 'Add Glossary Term';
-  $labels->add_new_item = 'Add Glossary Term';
-  $labels->edit_item = 'Edit Glossary Terms';
-  $labels->new_item = 'Glossary Term';
-  $labels->view_item = 'View Glossary Term';
-  $labels->search_items = 'Search Glossary Terms';
-  $labels->not_found = 'No Glossary Terms found';
-  $labels->not_found_in_trash = 'No Glossary Terms found in Trash';
-}
-add_action( 'init', __NAMESPACE__.'\\change_post_object_label' );
+add_action( 'admin_menu', __NAMESPACE__.'\\hide_post_menu' );
 
 
 // Custom Post Types
-
 function register_post_types() {
+
+  /* Glossary */
+  $glossary = array(
+    'public' => true,
+    'label'  => 'Glossary',
+    'supports' => array( 'title', 'editor' ),
+    'has_archive' => true
+  );
+  register_post_type( 'glossary', $glossary );
 
   /* Publications */
   $publications = array(
