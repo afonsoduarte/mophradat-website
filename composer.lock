@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9119f73481ea213b0a730838316b0250",
+    "hash": "51cbf815acb1e31fec5ebcb0d2e3bc76",
     "packages": [
         {
             "name": "composer/installers",
@@ -280,6 +280,26 @@
             "time": "2014-10-16 14:50:21"
         },
         {
+            "name": "wpackagist-plugin/acf-qtranslate",
+            "version": "1.7.9",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/acf-qtranslate/",
+                "reference": "tags/1.7.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-qtranslate.1.7.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-qtranslate/"
+        },
+        {
             "name": "wpackagist-plugin/advanced-custom-fields",
             "version": "4.4.2",
             "source": {
@@ -300,16 +320,16 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist-plugin/jetpack",
-            "version": "3.5.3",
+            "name": "wpackagist-plugin/qtranslate-x",
+            "version": "3.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.5.3"
+                "url": "http://plugins.svn.wordpress.org/qtranslate-x/",
+                "reference": "tags/3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.5.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/qtranslate-x.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -317,7 +337,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/jetpack/"
+            "homepage": "https://wordpress.org/plugins/qtranslate-x/"
         }
     ],
     "packages-dev": [],
