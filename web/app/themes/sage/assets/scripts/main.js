@@ -22,7 +22,7 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+        // Nav logic
         $('.navbar__toggle').click(function(){
           var $this = $(this),
               elData = $this.data(),
@@ -48,6 +48,19 @@
     'about_us': {
       init: function() {
         // JavaScript to be fired on the about us page
+      }
+    },
+    // Glossary Archive
+    'post_type_archive_glossary': {
+      init: function() {
+        // Term toggle 
+        $('.glossary-term__toggle').click(function(){
+          var $this = $(this),
+              elData = $this.data(),
+              toggle = elData.toggle,
+              target = elData.target;
+          $(target).toggleClass(toggle);
+        });
       }
     }
   };

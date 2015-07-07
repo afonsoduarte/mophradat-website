@@ -1,12 +1,18 @@
 .glossary-term {
+}
 
-
+.glossary-term--collapse {
+  max-height: $baseline;
+  overflow: hidden;
 }
 
 .glossary-term__title {
   display: inline;
   font-size: 1rem; // $body-font-size;
   font-weight: normal;
+  &:after {
+    content: ":";
+  }
 }
 
 .glossary-term__content,
@@ -14,6 +20,17 @@
   display: inline;
 }
 
+.glossary-term__toggle {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0;
+  height: $baseline;
+  line-height: $baseline;
+  outline: none;
+  color: blue;
+  cursor: pointer;
+}
 
 .see-glossary {
   margin: 0;

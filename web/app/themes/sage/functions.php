@@ -23,7 +23,10 @@ $sage_includes = [
   'lib/post-types.php',            // Custom post types
   'lib/custom-fields.php',
   'lib/taxonomies.php',
-  'lib/hooks.php'
+  'lib/hooks.php',
+
+  // Models
+  'models/glossary.php'
 ];
 
 foreach ($sage_includes as $file) {
