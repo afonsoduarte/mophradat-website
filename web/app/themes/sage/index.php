@@ -1,5 +1,3 @@
-<?php //get_template_part('templates/page', 'header'); ?>
-
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>
@@ -11,6 +9,4 @@
   <?php get_template_part('templates/content', 'glossary-term'); ?>
 <?php endwhile; ?>
 
-<p class="see-glossary">see <a href="">Glossary</a></p>
-
-<?php //the_posts_navigation(); ?>
+<p class="see-glossary">see <a href="/glossary">Glossary</a></p>

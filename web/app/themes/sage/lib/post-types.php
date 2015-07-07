@@ -17,7 +17,8 @@ function register_post_types() {
     'public' => true,
     'label'  => 'Glossary',
     'supports' => array( 'title', 'editor' ),
-    'has_archive' => true
+    'has_archive' => true,
+    'rewrite' => array( 'slug' => 'glossary' ),
   );
   register_post_type( 'glossary', $glossary );
 

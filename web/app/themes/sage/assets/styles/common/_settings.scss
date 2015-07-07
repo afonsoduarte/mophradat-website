@@ -208,7 +208,7 @@ $header-font-weight: $font-weight-normal;
 $header-font-style: normal;
 $header-font-color: $black;
 $header-line-height: $baseline;
-$header-top-margin: $baseline;
+$header-top-margin: 0; //$baseline;
 $header-bottom-margin: $baseline;
 $header-text-rendering: optimizeLegibility;
 

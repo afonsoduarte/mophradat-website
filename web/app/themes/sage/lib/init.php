@@ -115,34 +115,34 @@ function generate_default_content() {
 
   // GRANTS
   $past_grantees_page = array(
-    'post_content' =>'Past grantees content',
-    'post_title' => 'Past Grantees'
+    'post_content' =>'[:en]Past grantees content[:ar]رسمي[:]',
+    'post_title' => '[:en]Past Grantees[:ar][:]'
   );
 
   $download_form_page = array(
-    'post_content' =>'Download application form content',
-    'post_title' => 'Download application form'
+    'post_content' =>'[:en]Download application form content[:ar]رسمي[:]',
+    'post_title' => '[:en]Download application form[:ar][:]'
   );
 
   $submit_page = array(
-    'post_content' =>'Submit application form content',
-    'post_title' => 'Submit application'
+    'post_content' =>'[:en]Submit application form content[:ar]رسمي[:]',
+    'post_title' => '[:en]Submit application[:ar][:]'
   );
 
   $grants_for_artists_page = array(
-    'post_content' =>'Grants for artists content',
-    'post_title' => 'Grants for artists',
+    'post_content' =>'[:en]Grants for artists content[:ar]رسمي[:]',
+    'post_title' => '[:en]Grants for artists[:ar][:]',
     'post_children' => array( $download_form_page, $submit_page )
   );
 
   $grants_for_temporary_page = array(
-    'post_content' =>'Grants for temporary content',
-    'post_title' => 'Grants for temporary spaces & projects'
+    'post_content' =>'[:en]Grants for temporary content[:ar]رسمي[:]',
+    'post_title' => '[:en]Grants for temporary spaces & projects[:ar][:]'
   );
 
   $grants_page = array(
-    'post_content' =>'Grants content',
-    'post_title' => 'Grants',
+    'post_content' =>'[:en]Grants content[:ar]رسمي[:]',
+    'post_title' => '[:en]Grants[:ar][:]',
     'post_parent' => 0,
     'post_children' => array( $past_grantees_page, $grants_for_artists_page, $grants_for_temporary_page )
   );
@@ -151,8 +151,8 @@ function generate_default_content() {
 
   // MEETING POINTS
   $meeting_points_page = array(
-    'post_content' =>'Meeting points content',
-    'post_title' => 'Meeting points',
+    'post_content' =>'[:en]Meeting points content[:ar]رسمي[:]',
+    'post_title' => '[:en]Meeting points[:ar][:]',
     'post_parent' => 0
   );
   create_page($meeting_points_page);
@@ -160,24 +160,24 @@ function generate_default_content() {
 
   // CONVERSATIONS
   $writer_text_page = array(
-    'post_content' =>'Writer’s text content',
-    'post_title' => 'Writer’s text'
+    'post_content' =>'[:en]Writer’s text content[:ar]رسمي[:]',
+    'post_title' => '[:en]Writer’s text[:ar][:]'
   );
 
   $other_conversations_page = array(
-    'post_content' =>'Other conversations content',
-    'post_title' => 'Other conversations',
+    'post_content' =>'[:en]Other conversations content[:ar]رسمي[:]',
+    'post_title' => '[:en]Other conversations[:ar][:]',
     'post_children' => array( $writer_text_page )
   );
 
   $informal_meeting_page = array(
-    'post_content' =>'Informal content',
-    'post_title' => 'Informal'
+    'post_content' =>'[:en]Informal content[:ar]رسمي غير رسمي[:]',
+    'post_title' => '[:en]Informal[:ar]غير رسمي[:]'
   );
 
   $conversations_page = array(
-    'post_content' =>'Conversations content',
-    'post_title' => 'Conversations',
+    'post_content' =>'[:en]Conversations content[:ar]رسمي[:]',
+    'post_title' => '[:en]Conversations[:ar][:]',
     'post_parent' => 0,
     'post_children' => array( $informal_meeting_page, $other_conversations_page )
   );
@@ -186,8 +186,8 @@ function generate_default_content() {
 
   // About us
   $about_us_page = array(
-    'post_content' =>'About us content',
-    'post_title' => 'About us',
+    'post_content' =>'[:en]About us content[:ar]رسمي[:]',
+    'post_title' => '[:en]About us[:ar][:]',
     'post_parent' => 0
   );
   create_page($about_us_page);
@@ -195,8 +195,8 @@ function generate_default_content() {
 
   // GLOSSARY
   $glossary_page = array(
-    'post_content' =>'Glossary content',
-    'post_title' => 'Glossary',
+    'post_content' =>'[:en]Glossary content[:ar]رسمي[:]',
+    'post_title' => '[:en]Glossary[:ar][:]',
     'post_parent' => 0,
     'page_template' => 'archive-glossary.php'
   );

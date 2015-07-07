@@ -1,4 +1,5 @@
 .content {
+  margin-top: $baseline;
   @include grid-column(12);
   @media #{$medium-up} {
     @include grid-column(8);
