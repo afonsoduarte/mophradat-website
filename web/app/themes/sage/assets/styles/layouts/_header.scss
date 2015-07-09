@@ -10,14 +10,14 @@
   }
 
   @include sans-serif;
-  color: blue;
+  
 
   ul {
     @include sans-serif;
   }
-  
+
   a {
-    color: inherit;
+    color: black;
   }
 }
 
@@ -43,10 +43,11 @@
   padding: 0;
 }
 
-.navbar__name {
+a.navbar__name {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.05em;
+  color: blue;
 }
 
 .navbar__lang-menu {
@@ -62,6 +63,10 @@
 
   ul {
     list-style: none;
+  }
+
+  a {
+    color: blue;
   }
 }
 
