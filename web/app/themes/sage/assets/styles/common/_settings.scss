@@ -52,7 +52,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-$baseline: 22px;
+$baseline: 26px;
 $indent: 2em;
 
 // This is the default html and body font-size for the base rem value.
@@ -67,7 +67,7 @@ $rem-base: 16px;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-$base-font-size: 100%;
+$base-font-size: 125%; //  16px * 125% = 20px
 
 // The $base-font-size is 100% while $base-line-height is 150%
 $base-line-height: $baseline;

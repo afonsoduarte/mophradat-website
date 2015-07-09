@@ -9,8 +9,13 @@
     height: $baseline*6;
   }
 
-  font-family: $font-family-sans-serif;
+  @include sans-serif;
   color: blue;
+
+  ul {
+    @include sans-serif;
+  }
+  
   a {
     color: inherit;
   }
@@ -31,6 +36,7 @@
   background-color: transparent;
   background-image: url('../images/octo-web.png');
   background-repeat: no-repeat;
+  cursor: pointer;
 
   width: 120px;
   height: 100px;
@@ -38,6 +44,9 @@
 }
 
 .navbar__name {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 .navbar__lang-menu {
