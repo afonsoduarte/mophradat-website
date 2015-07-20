@@ -10,7 +10,7 @@ function title() {
     if (get_option('page_for_posts', true)) {
       return get_the_title(get_option('page_for_posts', true));
     } else {
-      return __('Latest Posts', 'sage');
+      return __('Home', 'sage');
     }
   } elseif (is_archive()) {
     return get_the_archive_title();
@@ -22,3 +22,14 @@ function title() {
     return get_the_title();
   }
 }
+
+/**
+ * Document title tag
+ */
+
+function document_title( $title, $sep ) {
+    //Check if custom titles are enabled from your option framework
+    $title = get_bloginfo('name') . " – " . NAMESPACE\title();
+    return $title;
+}
+add_filter( 'wp_title', __NAMESPACE__ . '\\document_title', 10, 2 );

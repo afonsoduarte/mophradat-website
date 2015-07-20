@@ -1,0 +1,10 @@
+
+
+.gallery__item {
+  margin-top: $baseline;
+}
+
+.gallery__caption {
+  margin-bottom: - $baseline;
+  @include sans-serif;
+}

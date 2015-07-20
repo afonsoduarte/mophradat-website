@@ -51,8 +51,8 @@ function gallery($attr) {
   ], $attr));
 
   $id = intval($id);
-  $columns = (12 % $columns == 0) ? $columns : 3;
-  $grid = sprintf('col-sm-%1$s col-lg-%1$s', 12 / $columns);
+  // $columns = (12 % $columns == 0) ? $columns : 3;
+  $grid = 'gallery__item';//sprintf('col-sm-%1$s col-lg-%1$s', 12 / $columns);
 
   if ($order === 'RAND') {
     $orderby = 'none';
@@ -93,22 +93,21 @@ function gallery($attr) {
         $image = wp_get_attachment_link($id, $size, false, false);
         break;
       case 'none':
-        $image = wp_get_attachment_image($id, $size, false, ['class' => 'thumbnail img-thumbnail']);
+        $image = wp_get_attachment_image($id, $size, false, ['class' => 'gallery__image thumbnail img-thumbnail']);
         break;
       default:
         $image = wp_get_attachment_link($id, $size, true, false);
         break;
     }
-    $output .= ($i % $columns == 0) ? '<div class="row gallery-row">' : '';
+    // $output .= ($i % $columns == 0) ? '<div class="row gallery-row">' : '';
     $output .= '<div class="' . $grid .'">' . $image;
 
     if (trim($attachment->post_excerpt)) {
-      $output .= '<div class="caption hidden">' . wptexturize($attachment->post_excerpt) . '</div>';
+      $output .= '<div class="gallery__caption hidden">' . wptexturize($attachment->post_excerpt) . '</div>';
     }
 
     $output .= '</div>';
     $i++;
-    $output .= ($i % $columns == 0) ? '</div>' : '';
   }
 
   $output .= ($i % $columns != 0 ) ? '</div>' : '';
@@ -116,7 +115,7 @@ function gallery($attr) {
 
   return $output;
 }
-if (current_theme_supports('bootstrap-gallery')) {
+if (current_theme_supports('plain-gallery')) {
   remove_shortcode('gallery');
   add_shortcode('gallery', __NAMESPACE__ . '\\gallery');
   add_filter('use_default_gallery_style', '__return_null');

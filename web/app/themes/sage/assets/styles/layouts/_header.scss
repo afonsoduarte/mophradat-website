@@ -46,8 +46,9 @@
 a.navbar__name {
   font-size: 18px;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: blue;
+  text-transform: uppercase;
 }
 
 .navbar__lang-menu {
@@ -72,6 +73,7 @@ a.navbar__name {
 
 .navbar__menu {
   background: white;
+  padding: $baseline/4 0;
   clear: left;
   list-style: none;
   .collapse & {
