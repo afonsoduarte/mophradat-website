@@ -57,9 +57,10 @@
         $('.glossary-term__toggle').click(function(){
           var $this = $(this),
               elData = $this.data(),
-              toggle = elData.toggle,
+              toggleClass = elData.toggle,
               target = elData.target;
-          $(target).toggleClass(toggle);
+          $('.glossary-term').addClass(toggleClass);
+          $(target).removeClass(toggleClass);
         });
       }
     }

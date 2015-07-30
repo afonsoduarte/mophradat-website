@@ -1,0 +1,29 @@
+.publication-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + $baseline/2);
+  margin-left: -$baseline/2;
+}
+
+.publication--excerpt {
+  max-width: 250px;
+  margin-bottom: $baseline;
+  margin-left: $baseline/2;
+}
+
+.publicaton-single {
+
+}
+
+.publication-single__title {
+  font-weight: bold;
+}
+
+.publication-single__author {
+  margin-top: -$baseline;
+}
+
+.publication-single__thumbnail {
+  float: right;
+  max-width: 300px;
+}

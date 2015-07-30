@@ -1,6 +1,10 @@
 .glossary-term {
 }
 
+.glossary-term:not(.glossary-term--collapse) {
+  margin-bottom: $baseline;
+}
+
 .glossary-term--collapse {
   max-height: $baseline;
   overflow: hidden;
@@ -30,9 +34,14 @@
   outline: none;
   color: blue;
   cursor: pointer;
+  margin-bottom: -$baseline;
+}
+
+.glossary-term:not(.glossary-term--collapse) + .glossary-term__toggle {
+  display: none;
 }
 
 .see-glossary {
-  margin: 0;
+  margin: (-$baseline) 0 0;
   text-indent: $indent;
 }

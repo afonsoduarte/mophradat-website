@@ -6,7 +6,9 @@
     <?php the_content(); ?>
   </div>
 </article>
+<?php if(is_archive()): ?>
 <button type="button" class="glossary-term__toggle" data-toggle="glossary-term--collapse" data-target="#glossary-term-<?php the_id(); ?>">
   <span class="sr-only"><?= __('Toggle term', 'sage'); ?></span>
   [...]
 </button>
+<?php endif; ?>

@@ -76,6 +76,7 @@ a.navbar__name {
   padding: $baseline/4 0;
   clear: left;
   list-style: none;
+  line-height: $baseline - 0px;
   .collapse & {
     display: none;
   }

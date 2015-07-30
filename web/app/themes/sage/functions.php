@@ -26,7 +26,8 @@ $sage_includes = [
   'lib/hooks.php',
 
   // Models
-  'models/glossary.php'
+  'models/glossary.php',
+  'models/publications.php'
 ];
 
 foreach ($sage_includes as $file) {
