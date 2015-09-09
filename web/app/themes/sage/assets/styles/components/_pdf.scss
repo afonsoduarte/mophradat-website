@@ -1,18 +1,14 @@
 .pdf {
   position: absolute;
-  background-color: red;
-  border-radius: 100%;
   top: 20px;
   right: 20px;
-  width: 80px;
-  height: 80px;
-  text-align: center;
 }
 
 .pdf__link {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   display: block;
-  color: white;
+  overflow: hidden;
+  text-indent: -999px;
+  height: 60px;
+  width: 60px;
+  background: url(../images/pdf-this.png) no-repeat;
 }

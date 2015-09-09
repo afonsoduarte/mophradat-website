@@ -11,7 +11,7 @@ namespace Roots\Sage\Models;
 function publication_classes() {
   $classes = 'publication';
   if(is_single()) $classes .= ' publication--single';
-  if(is_archive()) $classes .= ' publication--archive publication--collapse';
+  if(is_archive()) $classes .= ' publication--excerpt publication--collapse';
   return $classes;
 }
 

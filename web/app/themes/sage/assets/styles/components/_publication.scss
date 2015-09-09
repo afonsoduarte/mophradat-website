@@ -1,7 +1,10 @@
+.publication-header {
+  margin-bottom: $baseline;
+}
+
 .publication-list {
   display: flex;
   flex-wrap: wrap;
-  width: calc(100% + $baseline/2);
   margin-left: -$baseline/2;
 }
 
@@ -12,7 +15,6 @@
 }
 
 .publicaton-single {
-
 }
 
 .publication-single__title {

@@ -41,6 +41,11 @@
   width: 120px;
   height: 100px;
   padding: 0;
+
+  [dir=rtl] & {
+    float: right;
+    transform: rotateY(180deg);
+  }
 }
 
 a.navbar__name {
