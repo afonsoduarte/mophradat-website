@@ -9,7 +9,7 @@
       <a class="navbar__name" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     </div>
 
-    <nav class="collapse navbar__nav" role="navigation">
+    <nav class="navbar__nav" role="navigation">
       <div class="navbar__lang-menu">
         <?php echo qtranxf_generateLanguageSelectCode(); ?>
       </div>
