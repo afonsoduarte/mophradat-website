@@ -6,6 +6,13 @@ body {
   @include grid-row;
 }
 
+* + h1,
+* + h2,
+* + h3,
+* + h4 {
+  margin-top: $baseline;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,8 +30,9 @@ ul {
   padding: 0;
 }
 
-li li {
+main li {
   list-style: none;
+  text-indent: $indent;
   padding: 0;
   &:before {
     content: "– ";

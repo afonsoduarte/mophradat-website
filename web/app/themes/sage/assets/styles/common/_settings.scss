@@ -204,12 +204,12 @@ $include-html-type-classes: true;// $include-html-classes;
 
 // We use these to control header font styles
 $header-font-family: $body-font-family;
-$header-font-weight: $font-weight-normal;
+$header-font-weight: $font-weight-bold;
 $header-font-style: normal;
 $header-font-color: $black;
 $header-line-height: $baseline;
 $header-top-margin: 0; //$baseline;
-$header-bottom-margin: $baseline;
+$header-bottom-margin: 0; //$baseline;
 $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
