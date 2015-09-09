@@ -12,6 +12,6 @@
     <div class="publication-single__content">
       <?php the_content(); ?>
     </div>
-
+    <?php get_template_part('templates/pdf'); ?>
   </article>
 <?php endwhile; ?>
