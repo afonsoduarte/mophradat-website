@@ -6,7 +6,8 @@
       <button type="button" class="navbar__toggle collapsed" data-toggle="collapse" data-target=".navbar__nav">
         <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
       </button>
-      <a class="navbar__name" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar__name--en" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar__name--ar qtranxs_text_ar" href="<?= esc_url(home_url('/')); ?>">مفردات</a>
     </div>
 
     <nav class="navbar__nav" role="navigation">

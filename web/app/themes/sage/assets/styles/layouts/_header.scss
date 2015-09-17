@@ -11,7 +11,6 @@
 
   @include sans-serif;
   
-
   ul {
     @include sans-serif;
   }
@@ -30,42 +29,50 @@
 }
 
 .navbar__container {
-  position: fixed;
-  width: 100%;
+  // position: fixed;
+  // width: 100%;
   padding-top: $baseline;
   @media #{$medium-up} {
-    width: auto;
+    // width: auto;
   }
 }
 
 .navbar__toggle {
-  border: none;
-  float: left;
-  background-color: transparent;
-  background-image: url('../images/octo-web.png');
-  background-repeat: no-repeat;
-  cursor: pointer;
+  display: none;
+  // border: none;
+  // float: left;
+  // background-color: transparent;
+  // background-image: url('../images/octo-web.png');
+  // background-repeat: no-repeat;
+  // cursor: pointer;
 
-  width: 120px;
-  height: 100px;
-  padding: 0;
+  // width: 120px;
+  // height: 100px;
+  // padding: 0;
 
-  [dir=rtl] & {
-    float: right;
-    transform: rotateY(180deg);
-  }
+  // [dir=rtl] & {
+  //   float: right;
+  //   transform: rotateY(180deg);
+  // }
 }
 
-a.navbar__name {
+.navbar__header {
+  height: $baseline;
+}
+
+a.navbar__name--en {
   font-size: 18px;
-  font-weight: bold;
   letter-spacing: 0.06em;
-  color: blue;
   text-transform: uppercase;
+  float: left;
+}
+
+a.navbar__name--ar {
+  float: right;
 }
 
 .navbar__lang-menu {
-  margin-top: $baseline*2;
+  margin-top: $baseline/2;
   
   .collapse & {
     display: none;
@@ -82,11 +89,18 @@ a.navbar__name {
   a {
     color: blue;
   }
+
+  .lang-en {
+    text-align: left;
+  }
+  .lang-ar {
+    text-align: right;
+  }
 }
 
 .navbar__menu {
   background: white;
-  padding: $baseline/4 0;
+  margin-top: -12px;
   clear: left;
   list-style: none;
   line-height: $baseline - 0px;
@@ -101,4 +115,9 @@ a.navbar__name {
   .active & {
     display: block;
   }
+}
+
+// Active menu item in blue
+.active > a {
+  color: blue;
 }
