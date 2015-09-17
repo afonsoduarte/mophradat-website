@@ -95,7 +95,11 @@ function bower_map_to_cdn($dependency, $fallback) {
 }
 
 function assets() {
-  wp_enqueue_style('sage_css', asset_path('styles/main.css'), false, null);
+  if(qtranxf_getLanguage() === 'ar') {
+    wp_enqueue_style('sage_css', asset_path('styles/main-ar.css'), false, null);
+  } else {
+    wp_enqueue_style('sage_css', asset_path('styles/main-en.css'), false, null);
+  }
 
   /**
    * Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline

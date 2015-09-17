@@ -6,9 +6,15 @@
       ],
       "main": true
     },
-    "main.css": {
+    "main-en.css": {
       "files": [
-        "styles/main.scss"
+        "styles/main-en.scss"
+      ],
+      "main": true
+    },
+    "main-ar.css": {
+      "files": [
+        "styles/main-ar.scss"
       ],
       "main": true
     },
