@@ -6,6 +6,13 @@ body {
   @include grid-row;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
 p + h1,
 p + h2,
 p + h3,

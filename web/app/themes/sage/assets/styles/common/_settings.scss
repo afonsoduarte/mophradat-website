@@ -203,8 +203,8 @@ $include-html-type-classes: true;// $include-html-classes;
 
 
 // We use these to control header font styles
-$header-font-family: $body-font-family;
-$header-font-weight: $font-weight-bold;
+$header-font-family: $font-family-sans-serif;
+$header-font-weight: normal;
 $header-font-style: normal;
 $header-font-color: $black;
 $header-line-height: $baseline;
@@ -242,7 +242,7 @@ $h6-font-reduction: 0;
 // We use these to style paragraphs
 $paragraph-font-family: inherit;
 $paragraph-font-weight: $font-weight-normal;
-$paragraph-font-size: 1rem;
+$paragraph-font-size: rem-calc(19); 
 $paragraph-line-height: $baseline;
 $paragraph-margin-bottom: $baseline;
 $paragraph-aside-font-size: rem-calc(16);
